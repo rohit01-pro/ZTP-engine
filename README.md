@@ -1,4 +1,4 @@
-# Zero Trust Enabled Intelligent IDS Using Machine Learning
+# 🛡️Zero Trust Enabled Intelligent IDS Using Machine Learning
 
 
 <img width="2560" height="1517" alt="Screenshot 2026-01-21 at 8 54 44 PM" src="https://github.com/user-attachments/assets/eb9a22a5-67e7-4d54-9356-dde1a7842196" />
