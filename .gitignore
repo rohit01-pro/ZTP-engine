@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.env
+
+# VS Code
+.vscode/
+
+# Logs
+logs/
+
+# ML models (optional – keep if you want)
+*.pkl
+
+# OS
+.DS_Store
+
