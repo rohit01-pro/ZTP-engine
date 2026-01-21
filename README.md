@@ -99,6 +99,10 @@ Local server start karne ke baad, aap interactive documentation yahan dekh sakte
    python -m uvicorn src.api.main:app --reload
    ```
 
+<img width="1543" height="1189" alt="Screenshot 2026-01-21 at 8 55 28 PM" src="https://github.com/user-attachments/assets/828893b4-b923-491a-b12e-6d29a787f350" />
+<img width="1476" height="1238" alt="Screenshot 2026-01-21 at 8 56 08 PM" src="https://github.com/user-attachments/assets/33a4fe4e-1721-4826-837d-227f2389f6a3" />
+
+
 ## 🛡️ Security & Compliance
 This engine is designed to align with NIST SP 800-207 standards. While it does not prevent zero-day vulnerabilities (as no system can), it significantly reduces the blast radius of a breach by isolating compromised devices and identities within minutes
 
