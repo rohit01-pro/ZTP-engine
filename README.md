@@ -2,9 +2,6 @@
 
 
 <img width="2560" height="1517" alt="Screenshot 2026-01-21 at 8 54 44 PM" src="https://github.com/user-attachments/assets/eb9a22a5-67e7-4d54-9356-dde1a7842196" />
-<img width="1543" height="1189" alt="Screenshot 2026-01-21 at 8 55 28 PM" src="https://github.com/user-attachments/assets/828893b4-b923-491a-b12e-6d29a787f350" />
-<img width="1476" height="1238" alt="Screenshot 2026-01-21 at 8 56 08 PM" src="https://github.com/user-attachments/assets/33a4fe4e-1721-4826-837d-227f2389f6a3" />
-
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![XGBoost](https://img.shields.io/badge/XGBoost-EB6B02?style=for-the-badge&logo=xgboost&logoColor=white)
