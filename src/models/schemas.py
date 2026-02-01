@@ -1,5 +1,5 @@
 
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr, Field
 from typing import Optional, List
 from datetime import datetime
 from enum import Enum
@@ -111,4 +111,43 @@ class Token(BaseModel):
 
 class TokenData(BaseModel):
     user_id: Optional[int] = None
+
+class LoginRequest(BaseModel):
+    """Login request with device fingerprinting"""
+    username: str = Field(..., min_length=3, max_length=50)
+    password: str = Field(..., min_length=8)
+    device_fingerprint: str = Field(..., min_length=10, max_length=100)
+
+# Device fingerprinting fields
+    device_fingerprint: str = Field(..., description="Browser/device unique ID")
+    ip_address: str = Field(..., description="User's IP address")
+    user_agent: str = Field(..., description="Browser user agent string")
+    
+    # Optional additional security
+    location: Optional[str] = Field(None, description="Geographic location")
+    timestamp: Optional[str] = Field(None, description="Request timestamp")
+
+class DeviceInfo(BaseModel):
+    """Stored device information"""
+    device_id: str
+    device_fingerprint: str
+    ip_address: str
+    user_agent: str
+    location: Optional[str] = None
+    last_seen: str
+    trust_score: int = 100  # 0-100, decreases with suspicious activity
+
+class LoginResponse(BaseModel):
+    """Login response with security warnings"""
+    success: bool
+    message: str
+    access_token: Optional[str] = None
+    user_id: Optional[int] = None
+    
+    # Security alerts
+    is_new_device: bool = False
+    is_new_ip: bool = False
+    requires_2fa: bool = False
+    risk_level: str = "low"  # low, medium, high, critical
+    security_warnings: list[str] = []
 
